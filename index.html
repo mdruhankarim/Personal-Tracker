@@ -82,14 +82,11 @@
 
             exerciseInput.value = "";
         };
-
         const clearAllExercises = () => {
             exerciseList.innerHTML = "";
         };
-
         addExerciseBtn.addEventListener("click", addExercise);
         clearAllBtn.addEventListener("click", clearAllExercises);
-
         exerciseInput.addEventListener("keypress", (event) => {
             if (event.key === "Enter") {
                 addExercise();
